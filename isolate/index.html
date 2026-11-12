@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/png" href="/logo-emblem.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <meta name="color-scheme" content="light" />    <meta name="theme-color" content="#1565C0" />
+    <title>NQAS Tracker — District Quality Assurance Unit</title>
+    <meta name="description" content="NQAS Tracker — District Quality Assurance Unit: district health facility quality monitoring, certification, surveillance and exports." />
+    <script>
+      /* Sidebar state before first paint — no flash, no layout shift.
+         Modes: expanded (264px floating card) | rail (72px icon rail) |
+         collapsed (0px, <768px → off-canvas drawer).
+         A stale "collapsed" saved on desktop by an older version is coerced
+         to the width's default: the desktop card is never fully hidden. */
+      (function () {
+        try {
+          var w = window.innerWidth || document.documentElement.clientWidth;
+          /* expanded | rail | drawer — the SAME three states AppShell uses.
+             "collapsed" is the old name for the <768px drawer. */
+          var d = w < 768 ? "drawer" : w < 1280 ? "rail" : "expanded";
+          var m = localStorage.getItem("nqas.sidebar");
+          if (m === "collapsed") m = "drawer";
+          if (m === "drawer" && w >= 768) m = d;
+          if (m !== "expanded" && m !== "rail" && m !== "drawer") m = d;
+          document.documentElement.setAttribute("data-sidebar", m);
+          if (m === "drawer") document.documentElement.setAttribute("data-drawer", "closed");
+        } catch (e) {
+          document.documentElement.setAttribute("data-sidebar", "expanded");
+        }
+      })();
+    </script>
+  <script type="module" crossorigin src="/assets/index-CBV6wOh8.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/vendor-jspdf-BarNdCns.js">
+  <link rel="modulepreload" crossorigin href="/assets/icons-BxQpodNr.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-motion-DgC1stbS.js">
+  <link rel="modulepreload" crossorigin href="/assets/vendor-charts--qXk384P.js">
+  <link rel="stylesheet" crossorigin href="/assets/index-CneVNiou.css">
+</head>
+
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

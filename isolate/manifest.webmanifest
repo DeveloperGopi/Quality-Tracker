@@ -1,0 +1,17 @@
+{
+  "name": "NQAS Tracker — District Health Facility Quality Monitoring System",
+  "short_name": "NQAS Tracker",
+  "description": "NQAS & Kayakalp facility certification tracker for the district health department",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1565C0",
+  "icons": [
+    {
+      "src": "/logo-emblem.png",
+      "sizes": "1182x1182",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <linearGradient id="ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0869B5"/>
+      <stop offset="55%" stop-color="#138EB5"/>
+      <stop offset="100%" stop-color="#28A745"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B67B2"/>
+      <stop offset="100%" stop-color="#07518F"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#39B54A"/>
+      <stop offset="100%" stop-color="#1C9637"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1000" fill="#fff"/>
+  <circle cx="500" cy="500" r="455" fill="#fff" stroke="url(#ring)" stroke-width="24"/>
+
+  <!-- inner quality arc -->
+  <path d="M275 260 A235 235 0 0 1 760 260" fill="none" stroke="#39A935" stroke-width="18" stroke-linecap="round"/>
+
+  <!-- Hospital -->
+  <g filter="url(#shadow)">
+    <path d="M190 385 H810 V520 H190 Z" fill="url(#blue)"/>
+    <path d="M320 355 L500 245 L680 355 V540 H320 Z" fill="#fff" stroke="#0867B0" stroke-width="15"/>
+    <path d="M405 335 H595" stroke="#0867B0" stroke-width="15" stroke-linecap="round"/>
+    <rect x="450" y="420" width="100" height="120" rx="8" fill="#0A4F8B"/>
+    <rect x="220" y="420" width="65" height="65" rx="6" fill="#37A9DD"/>
+    <rect x="715" y="420" width="65" height="65" rx="6" fill="#37A9DD"/>
+    <path d="M500 275 V355 M460 315 H540" stroke="#E53935" stroke-width="32" stroke-linecap="square"/>
+    <path d="M350 555 H650" stroke="#0867B0" stroke-width="20" stroke-linecap="round"/>
+  </g>
+
+  <!-- Clipboard and chart -->
+  <g filter="url(#shadow)">
+    <rect x="650" y="255" width="215" height="330" rx="20" fill="#fff" stroke="#075B9F" stroke-width="12"/>
+    <rect x="720" y="225" width="75" height="55" rx="14" fill="#075B9F"/>
+    <circle cx="757" cy="242" r="9" fill="#fff"/>
+    <path d="M690 335 l18 18 34-40 M690 400 l18 18 34-40 M690 465 l18 18 34-40"
+          fill="none" stroke="#22A447" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M765 342 H820 M765 407 H820 M765 472 H820" stroke="#1686C4" stroke-width="9" stroke-linecap="round"/>
+    <rect x="685" y="510" width="28" height="40" rx="3" fill="#23A447"/>
+    <rect x="725" y="490" width="28" height="60" rx="3" fill="#23A447"/>
+    <rect x="765" y="462" width="28" height="88" rx="3" fill="#23A447"/>
+    <rect x="805" y="425" width="28" height="125" rx="3" fill="#23A447"/>
+    <path d="M675 515 C730 495 765 455 825 410" fill="none" stroke="#23A447" stroke-width="12"/>
+    <path d="M810 405 L845 398 L840 432 Z" fill="#23A447"/>
+  </g>
+
+  <!-- Flowing quality wave -->
+  <path d="M125 560 C300 470 405 625 570 600 C675 584 735 545 820 500"
+        fill="none" stroke="#39B54A" stroke-width="25" stroke-linecap="round"/>
+  <path d="M180 575 C320 530 415 655 575 625"
+        fill="none" stroke="#168BC0" stroke-width="15" stroke-linecap="round"/>
+
+  <!-- Main title -->
+  <text x="500" y="700" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="150" font-weight="800"
+        letter-spacing="8" fill="#07508F">NQAS</text>
+
+  <!-- Check in Q -->
+  <path d="M515 645 L545 675 L600 610" fill="none" stroke="#25A647" stroke-width="17"
+        stroke-linecap="round" stroke-linejoin="round"/>
+
+  <text x="500" y="795" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="92" font-weight="700"
+        fill="#249B3E">Tracker</text>
+
+  <line x1="250" y1="830" x2="750" y2="830" stroke="#78BBD8" stroke-width="5"/>
+
+  <text x="500" y="875" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700"
+        fill="#07508F">District Health Facility</text>
+  <text x="500" y="914" text-anchor="middle"
+        font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700"
+        fill="#07508F">Quality Monitoring System</text>
+</svg>
