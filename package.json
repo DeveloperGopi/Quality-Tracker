@@ -58,7 +58,7 @@
     "exceljs": "^4.4.0",
     "fflate": "^0.8.2",
     "framer-motion": "^12.23.25",
-    "hono": "^4.10.7",
+    "hono": "^4.13.16",
     "input-otp": "^1.4.2",
     "jspdf": "^4.2.1",
     "jspdf-autotable": "^5.0.8",
